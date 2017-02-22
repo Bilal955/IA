@@ -55,22 +55,37 @@ public class BrainMainCanevas extends Brain {
 			}
 		}
 		IFrontSensorResult.Types front = detectFront().getObjectType();
-		if (front == IFrontSensorResult.Types.WALL
-				|| front == IFrontSensorResult.Types.TeamMainBot) {
+		if (front == IFrontSensorResult.Types.WALL) {
+			System.out.println("Dir: " + getHeading());
 			if (descente) {
-				stepTurn(Direction.LEFT);
-				descente = false;
-				montee = true;
-				turningLeft = true;
-				turningRight = false;
+				// stepTurn(Direction.LEFT);
+				// descente = false;
+				// montee = true;
+				// turningLeft = true;
+				// turningRight = false;
+				if(getHeading() <= 0) {
+					stepTurn(Direction.RIGHT);
+				} else {
+					descente = false;
+					montee = true;
+					move();
+				}
 			} else {
-				stepTurn(Direction.RIGHT);
-				descente = true;
-				montee = false;
-				turningRight = true;
-				turningLeft = false;
+				// stepTurn(Direction.RIGHT);
+				// descente = true;
+				// montee = false;
+				// turningRight = true;
+				// turningLeft = false;
+				if(getHeading() >= 0) {
+					stepTurn(Direction.LEFT);
+				} else {
+					descente = true;
+					montee = false;
+					move();
+				}
 			}
 		} else {
+			System.out.println("tL " + turningLeft + " tR " + turningRight);
 			if (turningLeft) {
 				if (getHeading() <= -0.5 * Math.PI) {
 					stepTurn(Direction.LEFT);
