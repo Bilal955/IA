@@ -1,0 +1,38 @@
+/* ******************************************************
+ * Simovies - Eurobot 2015 Robomovies Simulator.
+ * Copyright (C) 2014 <Binh-Minh.Bui-Xuan@ens-lyon.org>.
+ * GPL version>=3 <http://www.gnu.org/licenses/>.
+ * $Id: algorithms/BrainCanevas.java 2014-10-19 buixuan.
+ * ******************************************************/
+package algorithms;
+
+import robotsimulator.Brain;
+import characteristics.IFrontSensorResult;
+import characteristics.IRadarResult;
+import characteristics.Parameters;
+
+public class BrainCanevas extends Brain {
+	 private static final double HEADINGPRECISION = 0.001;
+
+	  //---VARIABLES---//
+	  private boolean turnRightTask;
+	  private boolean taskOne;
+	  private double endTaskDirection;
+
+	  //---CONSTRUCTORS---//
+	  public BrainCanevas() { super(); }
+
+	  //---ABSTRACT-METHODS-IMPLEMENTATION---//
+	  public void activate() {
+	    turnRightTask=true;
+	    taskOne=true;
+	    move();
+	    sendLogMessage("Moving a head. Waza!");
+	  }
+	  public void step() {
+	    
+	  }
+	  private boolean isHeading(double dir){
+	    return Math.abs(Math.sin(getHeading()-dir))<HEADINGPRECISION;
+	  }
+}

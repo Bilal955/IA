@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="characteristics.Parameters.Direction"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="characteristics.Parameters"/>
+<fullyQualifiedTypeName name="characteristics.IRadarResult"/>
+<fullyQualifiedTypeName name="characteristics.IRadarResult.Types"/>
+<fullyQualifiedTypeName name="characteristics.IFrontSensorResult"/>
+<fullyQualifiedTypeName name="characteristics.IFrontSensorResult.Types"/>
+</qualifiedTypeNameHistroy>

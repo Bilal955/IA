@@ -1,0 +1,1133 @@
+!SESSION 2017-02-21 16:33:46.400 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.517
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.519
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.521
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.axis_1.4.0.v201005080400.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.523
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.527
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.530
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.533
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_core.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.536
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_core.feature_3.6.0.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.539
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.polarion.eclipse.team.svn.connector.svnkit18_4.1.3.I20150214-1700.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.541
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.544
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.546
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.549
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_core.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.552
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.554
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_ui.feature_3.3.402.v201501132217.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.556
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.558
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_core.feature_3.3.402.v201409292121.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.560
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_ui.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.562
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.jsdt.feature_1.6.100.v201410221502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.565
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.8.0.v201605251556.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.567
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.570
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.572
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_ui.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.575
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.602
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.603
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.604
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.axis_1.4.0.v201005080400.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.605
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.607
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.609
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.611
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_core.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.612
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_core.feature_3.6.0.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.613
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.polarion.eclipse.team.svn.connector.svnkit18_4.1.3.I20150214-1700.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.614
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.615
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.616
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.617
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_core.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.618
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.619
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_ui.feature_3.3.402.v201501132217.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.620
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.621
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_core.feature_3.3.402.v201409292121.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.622
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_ui.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.623
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.jsdt.feature_1.6.100.v201410221502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.624
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.8.0.v201605251556.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.625
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.626
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.627
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_ui.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-21 16:33:49.628
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 16:34:19.167
+!MESSAGE System property http.proxyHost is set to proxy.ufr-info-p6.jussieu.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 16:34:19.172
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 16:34:19.185
+!MESSAGE System property http.proxyHost is set to proxy.ufr-info-p6.jussieu.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 16:34:19.186
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.pde.core 4 0 2017-02-21 16:51:57.693
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:617)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:970)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:110)
+	at org.eclipse.pde.internal.ui.correction.java.FindClassResolutionsOperation.getValidPackages(FindClassResolutionsOperation.java:160)
+	at org.eclipse.pde.internal.ui.correction.java.FindClassResolutionsOperation.run(FindClassResolutionsOperation.java:113)
+	at org.eclipse.pde.internal.ui.correction.java.QuickFixProcessor.handleImportNotFound(QuickFixProcessor.java:221)
+	at org.eclipse.pde.internal.ui.correction.java.QuickFixProcessor.getCorrections(QuickFixProcessor.java:51)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:225)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:199)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3774)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3412)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.core_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.java_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.lib_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.unsupported_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.branding_6.5.0.201504121610.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.checkstyle_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.core_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.doc_6.5.0.201504121610.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.ui_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.archetype.common_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.discovery_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor.xml_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.launching_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.lifecyclemapping.defaults_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.appender_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.configuration_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.model.edit_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.core_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.refactoring_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.scm_1.5.1.20150109-1820.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.core_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.java_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.lib_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.unsupported_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.branding_6.5.0.201504121610.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.checkstyle_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.core_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.doc_6.5.0.201504121610.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.ui_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.archetype.common_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.695
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.discovery_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor.xml_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.launching_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.lifecyclemapping.defaults_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.appender_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.configuration_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.model.edit_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.core_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.refactoring_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-21 16:51:57.696
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.scm_1.5.1.20150109-1820.jar
+!SESSION 2017-02-22 14:50:52.357 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.356
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.358
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.364
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.axis_1.4.0.v201005080400.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.365
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.370
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.373
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.376
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_core.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.379
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_core.feature_3.6.0.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.381
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.polarion.eclipse.team.svn.connector.svnkit18_4.1.3.I20150214-1700.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.384
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.387
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.389
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.391
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_core.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.394
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.397
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_ui.feature_3.3.402.v201501132217.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.399
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.401
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_core.feature_3.3.402.v201409292121.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.403
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_ui.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.405
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.jsdt.feature_1.6.100.v201410221502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.408
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.8.0.v201605251556.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.411
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.414
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.417
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_ui.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.419
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.459
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.461
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.461
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/org.apache.axis_1.4.0.v201005080400.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.462
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/plugins/javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.464
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.465
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.466
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_core.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.467
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_core.feature_3.6.0.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.468
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.polarion.eclipse.team.svn.connector.svnkit18_4.1.3.I20150214-1700.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.469
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.470
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.471
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.472
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_core.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.473
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.474
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_ui.feature_3.3.402.v201501132217.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.475
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.476
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.server_core.feature_3.3.402.v201409292121.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.478
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.web_ui.feature_3.6.3.v201501312139.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.478
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.jsdt.feature_1.6.100.v201410221502.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.480
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_ui.feature_3.8.0.v201605251556.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.480
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.482
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.483
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.web_ui.feature_3.6.3.v201502041526.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-02-22 14:50:55.484
+!MESSAGE Unable to acquire PluginConverter service during generation for: /users/nfs/Etu1/3201211/.eclipse/org.eclipse.platform_4.4.2_185596441_linux_gtk_x86_64/features/org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-22 14:51:29.529
+!MESSAGE System property http.proxyHost is set to proxy.ufr-info-p6.jussieu.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-22 14:51:29.532
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-22 14:51:29.546
+!MESSAGE System property http.proxyHost is set to proxy.ufr-info-p6.jussieu.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-22 14:51:29.547
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.pde.core 4 0 2017-02-22 14:58:39.760
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:617)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:970)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:110)
+	at org.eclipse.pde.internal.ui.correction.java.FindClassResolutionsOperation.getValidPackages(FindClassResolutionsOperation.java:160)
+	at org.eclipse.pde.internal.ui.correction.java.FindClassResolutionsOperation.run(FindClassResolutionsOperation.java:113)
+	at org.eclipse.pde.internal.ui.correction.java.QuickFixProcessor.handleImportNotFound(QuickFixProcessor.java:221)
+	at org.eclipse.pde.internal.ui.correction.java.QuickFixProcessor.getCorrections(QuickFixProcessor.java:51)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:225)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:199)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3774)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3412)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.core_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.java_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.lib_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.unsupported_1.5.0.201505230804.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.branding_6.5.0.201504121610.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.checkstyle_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.core_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.doc_6.5.0.201504121610.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.ui_6.5.0.201504121610
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.archetype.common_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.discovery_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor.xml_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.launching_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.lifecyclemapping.defaults_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.appender_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.configuration_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.5.1.20150109-1819
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.model.edit_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.core_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.ui_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.refactoring_1.5.1.20150109-1820.jar
+Contains: File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.scm_1.5.1.20150109-1820.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.core_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.java_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.lib_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/ch.acanda.eclipse.pmd.unsupported_1.5.0.201505230804.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.branding_6.5.0.201504121610.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.checkstyle_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.761
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.core_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.doc_6.5.0.201504121610.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/net.sf.eclipsecs.ui_6.5.0.201504121610
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.archetype.common_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.core.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.discovery_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.editor.xml_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.jdt.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.launching_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.lifecyclemapping.defaults_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.appender_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.logback.configuration_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.5.1.20150109-1819
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.model.edit_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.core_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.profiles.ui_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.refactoring_1.5.1.20150109-1820.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2017-02-22 14:58:39.762
+!MESSAGE File does not exist: /usr/local/eclipse/plugins/org.eclipse.m2e.scm_1.5.1.20150109-1820.jar
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-22 16:44:55.102
+!MESSAGE Can't handle class org.eclipse.jdt.internal.compiler.ast.IfStatement as parent of completion location.
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 16:48:30.932
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1574)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1387)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1412)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1424)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:824)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3293)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:769)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2098)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4668)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9106)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1253)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 16:48:45.475
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1574)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1387)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1412)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1424)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:824)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3293)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:769)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2098)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4668)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9106)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1253)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 16:48:51.554
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1574)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1387)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1412)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1424)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:824)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3293)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:769)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2098)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4668)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9106)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1253)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.recommenders.rcp 2 12 2017-02-22 16:54:22.882
+!MESSAGE Failed to parse news feed
+!STACK 0
+org.apache.http.conn.HttpHostConnectException: Connect to www.codetrails.com:80 [www.codetrails.com/138.201.51.7] failed: Connexion terminée par expiration du délai d'attente
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.download(CheckForProjectNewsJob.java:128)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:92)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.ConnectException: Connexion terminée par expiration du délai d'attente
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 14 more
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 17:50:42.252
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:384)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3774)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3412)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 17:50:43.410
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1574)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1387)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1412)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1424)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:824)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3293)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:769)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2098)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4668)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9106)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1253)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2017-02-22 17:50:45.050
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1574)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1387)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1412)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1424)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:824)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3293)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:769)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2098)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4668)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9106)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1253)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
