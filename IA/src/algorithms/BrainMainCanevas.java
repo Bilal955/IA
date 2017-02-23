@@ -23,7 +23,6 @@ public class BrainMainCanevas extends Brain {
 	private boolean shoot;
 	private boolean front;
 	private boolean turning;
-	private Direction turningDir;
 
 	// ---CONSTRUCTORS---//
 	public BrainMainCanevas() {
@@ -38,57 +37,63 @@ public class BrainMainCanevas extends Brain {
 		rand = new Random();
 		rand.setSeed(10);
 		turning = false;
-		turningDir = Direction.LEFT;
 	}
 
 	public void step() {
-		
-		System.out.println("Ma life: " + getHealth());
-		if(isHeading(getHealth()))
+		if (isHeading(getHealth()))
 			return;
-		
+
 		ArrayList<IRadarResult> res = detectRadar();
-		
+		if (turning) {
+			// System.out.println("Angle " + getHeading());
+			stepTurn(Direction.LEFT);
+			if(getHeading() != 0.0 && isHeading(-3.1415)) {
+				System.out.println("Stop turning");
+				turning = false;
+			}
+			return;
+		}
+
 		for (IRadarResult iRadarResult : res) {
 			IRadarResult.Types type = iRadarResult.getObjectType();
-			
+
 			// Si je vois un ennemi je lui tire dessus
-			if (type == IRadarResult.Types.OpponentMainBot
-					|| type == IRadarResult.Types.OpponentSecondaryBot) {
+			if (type == IRadarResult.Types.OpponentMainBot || type == IRadarResult.Types.OpponentSecondaryBot) {
 				fire(iRadarResult.getObjectDirection());
-				System.out.println("Tirer vers " + iRadarResult.getObjectType().toString());
+				// System.out.println("Tirer vers " + iRadarResult.getObjectType().toString());
 				front = false;
 				return;
 			}
 			// S'il y a une balle en ma direction je tire aussi
-//			double objDirection = iRadarResult.getObjectDirection();
-//			if (type == IRadarResult.Types.BULLET && isHeading(objDirection)) {
-//				fire(objDirection);
-//				return;
-//			}
-			System.out.println(iRadarResult.getObjectType());
+			// double objDirection = iRadarResult.getObjectDirection();
+			// if (type == IRadarResult.Types.BULLET && isHeading(objDirection))
+			// {
+			// fire(objDirection);
+			// return;
+			// }
+			// System.out.println(iRadarResult.getObjectType());
 		}
-		
+
 		// Si je vois personne à l'horizon je bouge
-//		if(nobody)
-//			front = true;
-		
+		// if(nobody)
+		// front = true;
+
 		// S'il y a un mur je recule
 		if (detectFront().getObjectType() == IFrontSensorResult.Types.WALL) {
-			turning = false;
+			turning = true;
 		}
 
 		// Soit je tire soit je bouge
 		if (shoot) {
-			System.out.println("Je tire vers " + getShootingAngle());
+			// System.out.println("Je tire vers " + getShootingAngle());
 			fire(getShootingAngle());
 			shoot = false;
 		} else {
 			if (front) {
-				System.out.println("J'avance mais wtf");
+				// System.out.println("J'avance mais wtf");
 				move();
 			} else {
-				System.out.println("Y a un mur devant je dois reculer");
+				// System.out.println("Y a un mur devant je dois reculer");
 				moveBack();
 			}
 			shoot = true;
@@ -96,11 +101,10 @@ public class BrainMainCanevas extends Brain {
 	}
 
 	public double getShootingAngle() {
-		return rand.nextDouble() < 0.5 ? rand.nextDouble() + getHeading()
-				: getHeading() - rand.nextDouble();
+		return rand.nextDouble() < 0.5 ? rand.nextDouble() + getHeading() : getHeading() - rand.nextDouble();
 	}
-	
-	private boolean isHeading(double dir){
-	    return Math.abs(Math.sin(getHeading()-dir))<HEADINGPRECISION;
-	  }
+
+	private boolean isHeading(double dir) {
+		return Math.abs(Math.sin(getHeading() - dir)) < HEADINGPRECISION;
+	}
 }
