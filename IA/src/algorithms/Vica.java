@@ -169,7 +169,7 @@ public class Vica extends Brain {
 
 			/*** Comporte de base lorsque dennemi detecte ***/
 			if (enemyFighters + enemyPatrols > 0) {
-				System.out.println("Jattaque");
+				//System.out.println("Jattaque");
 				attack(enemyDirection);
 				return;
 			}
@@ -215,10 +215,10 @@ public class Vica extends Brain {
 	}
 	private void moveBackTast(double pos){
 		if(isDerriere(pos)){
-			System.out.println("Je vais devant");
+			//System.out.println("Je vais devant");
 			moveFrontTask = true;
 		}else{
-			System.out.println("Je vais derriere");
+			//System.out.println("Je vais derriere");
 			moveBackTask = true;
 		}
 		nbTurns = rand.nextInt(40);
@@ -264,7 +264,7 @@ public class Vica extends Brain {
 	private boolean isDevant(double pos){
 		double heading = getHeading();
 		double left = 0.5 * Math.PI;
-		System.out.println("POs = "+pos+" HEADING "+heading+" Left "+((heading + left) % (2*Math.PI))+" right "+((heading - left) % (2*Math.PI))+" res "+(pos <= (heading + left) % (2*Math.PI) && pos >= (heading - left) % (2*Math.PI)));
+		//System.out.println("POs = "+pos+" HEADING "+heading+" Left "+((heading + left) % (2*Math.PI))+" right "+((heading - left) % (2*Math.PI))+" res "+(pos <= (heading + left) % (2*Math.PI) && pos >= (heading - left) % (2*Math.PI)));
 		return pos <= (heading + left) % (2*Math.PI) && pos >= (heading - left) % (2*Math.PI);
 	}
 	
@@ -275,7 +275,7 @@ public class Vica extends Brain {
 	private boolean isAGauche(double pos){
 		double heading = getHeading();
 		double left =Math.PI;
-		System.out.println("POs = "+pos+" HEADING "+heading+" Right "+(heading % (2 * Math.PI))+" Left "+((heading - left) % (2 * Math.PI))+" resultat = "+(pos <= heading % (2 * Math.PI) && pos >= (heading - left) % (2 * Math.PI)));
+		//System.out.println("POs = "+pos+" HEADING "+heading+" Right "+(heading % (2 * Math.PI))+" Left "+((heading - left) % (2 * Math.PI))+" resultat = "+(pos <= heading % (2 * Math.PI) && pos >= (heading - left) % (2 * Math.PI)));
 		return pos <= heading % (2 * Math.PI) && pos >= (heading - left) % (2 * Math.PI);
 	}
 	

@@ -6,13 +6,12 @@
  * ******************************************************/
 package algorithms;
 
-import robotsimulator.Brain;
 import characteristics.Parameters;
-import characteristics.IFrontSensorResult;
+import robotsimulator.Brain;
 
 public class RandomFire extends Brain {
   //---PARAMETERS---//
-  private static final double HEADINGPRECISION = 0.001;
+  // private static final double HEADINGPRECISION = 0.001;
 
   //---VARIABLES---//
   private boolean turnTask,turnRight,moveTask;

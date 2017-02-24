@@ -23,6 +23,9 @@ public class BrainMainCanevas extends Brain {
 	private boolean shoot;
 	private boolean front;
 	private boolean turning;
+	private boolean avoid;
+	private int id;
+	private static int gene = 1;
 
 	// ---CONSTRUCTORS---//
 	public BrainMainCanevas() {
@@ -37,6 +40,8 @@ public class BrainMainCanevas extends Brain {
 		rand = new Random();
 		rand.setSeed(10);
 		turning = false;
+		avoid = false;
+		id = gene++;
 	}
 
 	public void step() {
@@ -46,34 +51,48 @@ public class BrainMainCanevas extends Brain {
 		boolean nobody = false;
 		ArrayList<IRadarResult> res = detectRadar();
 		if (turning) {
-			// System.out.println("Angle " + getHeading());
+			// System.out.println("Turning angle " + getHeading());
 			stepTurn(Direction.LEFT);
-			if(getHeading() != 0.0 && isHeading(-3.1415)) {
+			if(getHeading() != 0.0 && isEndTurn(Math.PI)) {
 				System.out.println("Stop turning");
 				turning = false;
 			}
 			return;
 		}
 		
+		if(avoid) {
+			System.out.println("Je evite");
+			stepTurn(Direction.LEFT);
+			if(getHeading() != 0.0 && isEndTurn(Math.PI/2)) {
+				System.out.println("Arreter de tourner");
+				avoid = false;
+			}
+			return;
+		}
+		
 		if(detectFront().getObjectType() == IFrontSensorResult.Types.BULLET) {
+			System.out.println("Je recule y a une balle");
 			moveBack();
 			return;
 		}
 
 		for (IRadarResult iRadarResult : res) {
 			IRadarResult.Types type = iRadarResult.getObjectType();
+			
+			if(type == IRadarResult.Types.Wreck && isHeading(iRadarResult.getObjectDirection())) {
+				System.out.println("J'essaye d'eviter quelqu'un + " + id);
+				// stepTurn(Direction.LEFT);
+				moveBack();
+				// front = false;
+				avoid = true;
+				return;
+			}
 
 			// Si je vois un ennemi je lui tire dessus
 			if (type == IRadarResult.Types.OpponentMainBot || type == IRadarResult.Types.OpponentSecondaryBot) {
 				fire(iRadarResult.getObjectDirection());
 				// System.out.println("Tirer vers " + iRadarResult.getObjectType().toString());
 				// front = false;
-				return;
-			}
-			if(type == IRadarResult.Types.Wreck && isHeading(iRadarResult.getObjectDirection())) {
-				stepTurn(Direction.LEFT);
-				// front = false;
-				turning = true;
 				return;
 			}
 			// S'il y a une balle en ma direction je tire aussi
@@ -118,5 +137,9 @@ public class BrainMainCanevas extends Brain {
 
 	private boolean isHeading(double dir) {
 		return Math.abs(Math.sin(getHeading() - dir)) < HEADINGPRECISION;
+	}
+	
+	public boolean isEndTurn(double val) {
+		return Math.abs(Math.sin((getHeading()%val) - val)) < HEADINGPRECISION;
 	}
 }
