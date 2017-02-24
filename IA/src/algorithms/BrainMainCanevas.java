@@ -43,6 +43,7 @@ public class BrainMainCanevas extends Brain {
 		if (isHeading(getHealth()))
 			return;
 
+		boolean nobody = false;
 		ArrayList<IRadarResult> res = detectRadar();
 		if (turning) {
 			// System.out.println("Angle " + getHeading());
@@ -53,6 +54,11 @@ public class BrainMainCanevas extends Brain {
 			}
 			return;
 		}
+		
+		if(detectFront().getObjectType() == IFrontSensorResult.Types.BULLET) {
+			moveBack();
+			return;
+		}
 
 		for (IRadarResult iRadarResult : res) {
 			IRadarResult.Types type = iRadarResult.getObjectType();
@@ -61,7 +67,13 @@ public class BrainMainCanevas extends Brain {
 			if (type == IRadarResult.Types.OpponentMainBot || type == IRadarResult.Types.OpponentSecondaryBot) {
 				fire(iRadarResult.getObjectDirection());
 				// System.out.println("Tirer vers " + iRadarResult.getObjectType().toString());
-				front = false;
+				// front = false;
+				return;
+			}
+			if(type == IRadarResult.Types.Wreck && isHeading(iRadarResult.getObjectDirection())) {
+				stepTurn(Direction.LEFT);
+				// front = false;
+				turning = true;
 				return;
 			}
 			// S'il y a une balle en ma direction je tire aussi
@@ -75,8 +87,8 @@ public class BrainMainCanevas extends Brain {
 		}
 
 		// Si je vois personne à l'horizon je bouge
-		// if(nobody)
-		// front = true;
+		if(nobody)
+			front = true;
 
 		// S'il y a un mur je recule
 		if (detectFront().getObjectType() == IFrontSensorResult.Types.WALL) {
