@@ -75,10 +75,10 @@ public class CacherDansLesCoins extends Brain {
 		//DEBUG MESSAGE
 		if(imHaut()) {
 			if(iAmInPositionRobotHaut()) {
-				System.out.println("HELLO DUDE ------------------");
+				// System.out.println("HELLO DUDE ------------------");
 				return;
 			} else {
-				System.out.println("X = "+myX+", Y = "+myY);
+				// System.out.println("X = "+myX+", Y = "+myY);
 				if(pasEncoreEnHaut()) {
 					if(turnWhile90DegreAGauche())
 						return;

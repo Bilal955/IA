@@ -25,6 +25,7 @@ public class BrainMainCanevas extends Brain {
 	private boolean front;
 	private boolean turning;
 	private boolean avoid;
+	private int nbBack;
 	private int id;
 	private static int gene = 1;
 
@@ -39,6 +40,7 @@ public class BrainMainCanevas extends Brain {
 		front = true;
 		shoot = 0;
 		shootEnemy = 0;
+		nbBack = 0;
 		rand = new Random();
 		rand.setSeed(10);
 		turning = false;
@@ -53,15 +55,16 @@ public class BrainMainCanevas extends Brain {
 		boolean nobody = true;
 		IFrontSensorResult.Types frontType = detectFront().getObjectType();
 		ArrayList<IRadarResult> res = detectRadar();
-//		if(!frontType.toString().equals("NOTHING"))
-//			System.out.println("> " + id + " front: " + frontType + " avance: " + front);
+		// if(!frontType.toString().equals("NOTHING"))
+		// System.out.println("> " + id + " front: " + frontType + " avance: " +
+		// front);
 
 		if (turning) {
 			stepTurn(Direction.LEFT);
 			if (getHeading() != 0.0 && isEndTurn(Math.PI)) {
-				//System.out.println("Stop turning");
+				// System.out.println("Stop turning");
 				turning = false;
-				if(rand.nextInt(5) == 1)
+				if (rand.nextInt(5) == 1)
 					avoid = true;
 			}
 			return;
@@ -70,7 +73,7 @@ public class BrainMainCanevas extends Brain {
 		if (avoid) {
 			stepTurn(Direction.LEFT);
 			if (getHeading() != 0.0 && isEndTurn(Math.PI / 2)) {
-				//System.out.println(">" + id + " arretes de tourner");
+				// System.out.println(">" + id + " arretes de tourner");
 				avoid = false;
 			}
 			return;
@@ -95,25 +98,60 @@ public class BrainMainCanevas extends Brain {
 			return;
 		}
 
+		IRadarResult nearestOpponent = null;
+		double minDist = Double.MAX_VALUE;
+		for (IRadarResult iRadarResult : res) {
+			double dist = iRadarResult.getObjectDistance();
+
+			if (dist < minDist) {
+				minDist = dist;
+				nearestOpponent = iRadarResult;
+			}
+		}
+
+		// Si je vois un ennemi (le plus proche) je lui tire dessus tout en
+		// reculant
+		if (nearestOpponent != null) {
+			// double soeDirections =
+			// Math.abs(nearestOpponent.getObjectDirection()) +
+			// Math.abs(getHeading());
+			// System.out.println("main> " + id + " nearest type: "
+			// + nearestOpponent.getObjectType().toString() + " direction: "
+			// + nearestOpponent.getObjectDirection() + " dist: " +
+			// nearestOpponent.getObjectDistance()
+			// + " heading: " + getHeading()
+			// + " soe: " + soeDirections);
+
+			if (!turning && nearestOpponent.getObjectDistance() < 150
+					&& (nearestOpponent.getObjectType() == IRadarResult.Types.TeamMainBot
+					|| nearestOpponent.getObjectType() == IRadarResult.Types.TeamSecondaryBot)) {
+				System.out.println("main> " + id + " nearest type: " + nearestOpponent.getObjectType().toString()
+						+ " direction: " + nearestOpponent.getObjectDirection() + "dist: "
+						+ nearestOpponent.getObjectDistance());
+				turning = true;
+			}
+
+			if (nearestOpponent.getObjectType() == IRadarResult.Types.OpponentMainBot
+					|| nearestOpponent.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
+				if (shootEnemy % 4 == 0)
+					moveBack();
+				else
+					fire(nearestOpponent.getObjectDirection());
+				shootEnemy++;
+				return;
+			}
+		}
+
 		for (IRadarResult iRadarResult : res) {
 			IRadarResult.Types type = iRadarResult.getObjectType();
 
 			if (type == IRadarResult.Types.Wreck && isHeading(iRadarResult.getObjectDirection())) {
-				System.out.println(">" + id + "j 'essaye d'eviter WRECK");
+				// System.out.println(">" + id + "j 'essaye d'eviter WRECK");
 				moveBack();
 				avoid = true;
 				return;
 			}
-
-			// Si je vois un ennemi je lui tire dessus tout en reculant
-			if (type == IRadarResult.Types.OpponentMainBot || type == IRadarResult.Types.OpponentSecondaryBot) {
-				if (shootEnemy % 4 == 0)
-					moveBack();
-				else
-					fire(iRadarResult.getObjectDirection());
-				shootEnemy++;
-				return;
-			}
+			// System.out.println(">> " + type);
 
 			// S'il y a une balle en ma direction je tire aussi
 			double objDirection = iRadarResult.getObjectDirection();
@@ -129,7 +167,7 @@ public class BrainMainCanevas extends Brain {
 			}
 		}
 
-		// Si je vois personne à l'horizon je bouge
+		// Si je vois personne a l'horizon je bouge
 		if (nobody)
 			front = true;
 
@@ -138,7 +176,7 @@ public class BrainMainCanevas extends Brain {
 			turning = true;
 		} else if (frontType == IFrontSensorResult.Types.TeamMainBot
 				|| frontType == IFrontSensorResult.Types.TeamSecondaryBot) {
-			System.out.println("> " + id + " front: " + frontType);
+			// System.out.println("> " + id + " front: " + frontType);
 			avoid = true;
 			shoot = 1; // pas tirer sur ses partenaires
 		}
