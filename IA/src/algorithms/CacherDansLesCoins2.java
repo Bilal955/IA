@@ -1,9 +1,11 @@
 package algorithms;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 import characteristics.IRadarResult;
 import characteristics.Parameters;
+import characteristics.Parameters.Direction;
 import robotsimulator.Brain;
 
 public class CacherDansLesCoins2 extends Brain {
@@ -11,7 +13,7 @@ public class CacherDansLesCoins2 extends Brain {
 
 	private double xFinalHaut = 0+2*Parameters.teamASecondaryBotRadius;
 	private double yFinalHaut = 0+2*Parameters.teamASecondaryBotRadius;
- 
+
 	private boolean okEnHaut = false;
 	private boolean okAGauche = false;
 
@@ -60,6 +62,13 @@ public class CacherDansLesCoins2 extends Brain {
 		isMoving=false;
 	}
 
+	public double getDirectionToAngle(double dir, double x2, double y2) {
+		double angle = Math.atan2(y2, x2) - Math.atan(dir);
+		if (angle < 0) 
+			angle += 2 * Math.PI;
+		return angle;
+	}
+	
 	@Override
 	public void step() {
 		// RADAR
@@ -75,75 +84,39 @@ public class CacherDansLesCoins2 extends Brain {
 
 		//DEBUG MESSAGE
 		if(imHaut()) {
-			if(iAmInPositionRobotHaut()) {
-				System.out.println("HELLO DUDE ------------------");
+			MyPoint objectif = new MyPoint(1, 1);
+			MyPoint ptMe = new MyPoint(myX, myY);
+			double dir = -getAngle(ptMe, objectif);
+			System.out.println(getHeading());
+			
+			if(isHeading2(dir)) {
+				System.out.println("JE SUIS HEADING");
+				myMove();
 				return;
-			} else {
-				System.out.println("X = "+myX+", Y = "+myY);
-				if(pasEncoreEnHaut()) {
-					if(turnWhile90DegreAGauche())
-						return;
-					else {
-						myMove();
-						return;
-					}
-				}
-				else {
-					okEnHaut = true;
-					if(pasEncoreAGauche()) {
-						if(turnWhileNotAGauche())
-							return;
-						else {
-							myMove();
-							return;
-						}
-					}
-					else {
-						okAGauche = true;
-						return;
-					}
-				}
-			} 
+			}
+			else if(dir > 0) {
+				stepTurn(Direction.RIGHT);
+				return;
+			}
+			else {
+				stepTurn(Direction.LEFT);
+				return;
+			}
 		}
 		else {
 
 		}
 
 	}
-
-
-
-	private boolean iAmInPositionRobotHaut() {
-		return okAGauche && okEnHaut;
-	}
-
-	private boolean pasEncoreAGauche() {
-		return myX > xFinalHaut;
-	} 
-	private boolean pasEncoreEnHaut() {
-		return myY > yFinalHaut;
-	}
-
-	private boolean turnWhile90DegreAGauche() {
-		if(super.getHeading() > -Math.PI/2) { // Plus le base est eleve, plus il tourne
-			stepTurn(Parameters.Direction.LEFT);
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
-
-	private boolean turnWhileNotAGauche() {
-		if(super.getHeading() > -Math.PI) { // Plus le base est eleve, plus il tourne
-			stepTurn(Parameters.Direction.LEFT);
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+	
+	
+	 public double getAngle(MyPoint me, MyPoint dest) {
+		 Vector2d vMe = new Vector2d(me);
+		 Vector2d vDest= new Vector2d(dest);
+		 double angle = vMe.angle(vDest);
+		 System.out.println(me + " | " + dest + " | " +angle + " | "+getHeading());
+		 return angle;
+     }
 
 
 
@@ -161,9 +134,13 @@ public class CacherDansLesCoins2 extends Brain {
 		return Math.abs(Math.sin(getHeading()-dir))<HEADINGPRECISION;
 	}
 
+	private boolean isHeading2(double dir){
+		return Math.abs(Math.sin(getHeading()-dir))<Parameters.teamAMainBotStepTurnAngle;
+	}
 
 	private boolean isSameDirection(double dir1, double dir2){
 		return Math.abs(dir1-dir2)<ANGLEPRECISION;
 	}
+	
 
 }
