@@ -79,12 +79,12 @@ public class CacherDansLesCoins extends Brain {
 		radarResults = detectRadar();
 
 		// ODOMETRY CODE
-//		if (isMoving) {
-//			myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
-//			myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
-//			isMoving=false;
-//			return;
-//		}
+		//		if (isMoving) {
+		//			myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
+		//			myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
+		//			isMoving=false;
+		//			return;
+		//		}
 
 		// Se cache dans les coins
 		if(!goToPosition())
@@ -105,7 +105,7 @@ public class CacherDansLesCoins extends Brain {
 			System.out.println("Y = "+myY+", X = "+myX);
 			if( myY > yMil - (Parameters.teamASecondaryBotRadius+10) || myY < 50 )
 				haveToMoveDroit = !haveToMoveDroit;
-			
+
 		} else {
 			if(myY < yMil + (Parameters.teamASecondaryBotRadius+10) || myY >  yFinalBas-50)
 				haveToMoveDroit = !haveToMoveDroit;
@@ -211,11 +211,11 @@ public class CacherDansLesCoins extends Brain {
 	private boolean pasEncoreEnHaut() {
 		return myY > yFinalHaut + 50; //////// TODO
 	}
-	
+
 	private boolean pasEncoreAGauche() {
 		return myX > xFinalHaut;
 	} 
-	
+
 	private boolean iAmInPositionRobotHaut() {
 		return okAGauche && okEnHaut;
 	}
