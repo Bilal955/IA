@@ -53,13 +53,13 @@ public class BrainMainCanevas extends Brain {
 		boolean nobody = true;
 		IFrontSensorResult.Types frontType = detectFront().getObjectType();
 		ArrayList<IRadarResult> res = detectRadar();
-		if(!frontType.toString().equals("NOTHING"))
-			System.out.println("> " + id + " front: " + frontType + " avance: " + front);
+//		if(!frontType.toString().equals("NOTHING"))
+//			System.out.println("> " + id + " front: " + frontType + " avance: " + front);
 
 		if (turning) {
 			stepTurn(Direction.LEFT);
 			if (getHeading() != 0.0 && isEndTurn(Math.PI)) {
-				System.out.println("Stop turning");
+				//System.out.println("Stop turning");
 				turning = false;
 				if(rand.nextInt(5) == 1)
 					avoid = true;
@@ -70,7 +70,7 @@ public class BrainMainCanevas extends Brain {
 		if (avoid) {
 			stepTurn(Direction.LEFT);
 			if (getHeading() != 0.0 && isEndTurn(Math.PI / 2)) {
-				System.out.println(">" + id + " arretes de tourner");
+				//System.out.println(">" + id + " arretes de tourner");
 				avoid = false;
 			}
 			return;
