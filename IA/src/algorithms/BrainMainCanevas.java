@@ -98,20 +98,19 @@ public class BrainMainCanevas extends Brain {
 			return;
 		}
 
-		IRadarResult nearestOpponent = null;
+		IRadarResult nearestObj = null;
 		double minDist = Double.MAX_VALUE;
 		for (IRadarResult iRadarResult : res) {
 			double dist = iRadarResult.getObjectDistance();
 
 			if (dist < minDist) {
 				minDist = dist;
-				nearestOpponent = iRadarResult;
+				nearestObj = iRadarResult;
 			}
 		}
 
-		// Si je vois un ennemi (le plus proche) je lui tire dessus tout en
-		// reculant
-		if (nearestOpponent != null) {
+		// Si je vois un ennemi (le plus proche) je lui tire dessus tout en reculant
+		if (nearestObj != null) {
 			// double soeDirections =
 			// Math.abs(nearestOpponent.getObjectDirection()) +
 			// Math.abs(getHeading());
@@ -121,22 +120,30 @@ public class BrainMainCanevas extends Brain {
 			// nearestOpponent.getObjectDistance()
 			// + " heading: " + getHeading()
 			// + " soe: " + soeDirections);
-
-			if (!turning && nearestOpponent.getObjectDistance() < 150
-					&& (nearestOpponent.getObjectType() == IRadarResult.Types.TeamMainBot
-					|| nearestOpponent.getObjectType() == IRadarResult.Types.TeamSecondaryBot)) {
-				System.out.println("main> " + id + " nearest type: " + nearestOpponent.getObjectType().toString()
-						+ " direction: " + nearestOpponent.getObjectDirection() + "dist: "
-						+ nearestOpponent.getObjectDistance());
+			// double soeHeading = (Math.abs(getHeading()) + Math.abs(nearestObj.getObjectDirection())) % Math.PI                                                                                                                                                                                                                                                                  ;
+			double myHeading = getHeading() % Math.PI;
+			double nearestHeading = nearestObj.getObjectDirection() % Math.PI;
+			
+			boolean near = true;
+			
+			// System.out.println("Soe: " + soeHeading + " myHeading:" + getHeading() + " nearHeading: " + nearestObj.getObjectDirection());
+			
+			if (!turning && nearestObj.getObjectDistance() < 150
+					&& sameDirection(getHeading(), nearestObj.getObjectDirection())
+					&& (nearestObj.getObjectType() == IRadarResult.Types.TeamMainBot
+					|| nearestObj.getObjectType() == IRadarResult.Types.TeamSecondaryBot)) {
+				System.out.println("main> " + id + " nearest type: " + nearestObj.getObjectType().toString()
+						+ " direction: " + nearestObj.getObjectDirection() + "dist: "
+						+ nearestObj.getObjectDistance());
 				turning = true;
 			}
 
-			if (nearestOpponent.getObjectType() == IRadarResult.Types.OpponentMainBot
-					|| nearestOpponent.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
+			if (nearestObj.getObjectType() == IRadarResult.Types.OpponentMainBot
+					|| nearestObj.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
 				if (shootEnemy % 4 == 0)
 					moveBack();
 				else
-					fire(nearestOpponent.getObjectDirection());
+					fire(nearestObj.getObjectDirection());
 				shootEnemy++;
 				return;
 			}
@@ -218,5 +225,11 @@ public class BrainMainCanevas extends Brain {
 	public boolean isEndTurn(double val) {
 		return Math.abs(Math.sin((getHeading() % val) - val)) < HEADINGPRECISION
 				|| Math.abs(Math.sin(getHeading() % val)) < HEADINGPRECISION;
+	}
+	
+	private boolean sameDirection(double dirA, double dirB) {
+		boolean diffSign = (dirA < 0 && dirB > 0) || (dirA > 0 && dirB < 0);
+		
+		return diffSign;
 	}
 }
