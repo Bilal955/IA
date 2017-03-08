@@ -1,6 +1,5 @@
 package algorithms;
 
-import java.awt.Point;
 import java.util.ArrayList;
 
 import characteristics.IRadarResult;
@@ -8,17 +7,16 @@ import characteristics.Parameters;
 import characteristics.Parameters.Direction;
 import robotsimulator.Brain;
 
-public class CacherDansLesCoins2 extends Brain {
+public class CacherDansLesCoinsGauche extends Brain {
 
-
-	private double xFinalHaut = 2000 - 2*Parameters.teamASecondaryBotRadius;
+	private double xFinalHaut = 0 + 2*Parameters.teamASecondaryBotRadius;
 	private double yFinalHaut = 0 + 10 + Parameters.teamASecondaryBotRadius;
 	private double yFinalBas = 1940;
 	private double yMil = yFinalBas/2;
 
 	private boolean okEnHaut = false;
 	private boolean okEnBas = false;
-	private boolean okDroite = false;
+	private boolean okAGauche = false;
 
 	//---PARAMETERS---//
 	private static final double HEADINGPRECISION = 0.001;
@@ -128,11 +126,11 @@ public class CacherDansLesCoins2 extends Brain {
 		
 		boolean pasEncoreEnBas = myY < yFinalBas - 50;
 		boolean pasEncoreEnHaut = myY > yFinalHaut + 50; 
-		boolean pasEncoreADroite = myX < xFinalHaut;
+		boolean pasEncoreAGauche = myX > xFinalHaut;
 		
 		Parameters.Direction dirCur = imRobotDuHaut ? Parameters.Direction.LEFT : Parameters.Direction.RIGHT;
 		if(imRobotDuHaut) {
-			if(okDroite && okEnHaut) {
+			if(okAGauche && okEnHaut) {
 				return true;
 			} else {
 				if(pasEncoreEnHaut) {
@@ -141,19 +139,19 @@ public class CacherDansLesCoins2 extends Brain {
 				}
 				else {
 					okEnHaut = true;
-					if(pasEncoreADroite) {
-						if(turnVersThisPositionIsOk(Math.PI, dirCur))
+					if(pasEncoreAGauche) {
+						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
 							myMove();
 					}
 					else {
-						okDroite = true;
+						okAGauche = true;
 					}
 				}
 			} 
 			return false;
 		}
 		else {
-			if(okDroite && okEnBas) {
+			if(okAGauche && okEnBas) {
 				return true;
 			} else {
 				if(pasEncoreEnBas) {
@@ -162,12 +160,12 @@ public class CacherDansLesCoins2 extends Brain {
 				}
 				else {
 					okEnBas = true;
-					if(pasEncoreADroite) {
+					if(pasEncoreAGauche) {
 						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
 							myMove();
 					}
 					else {
-						okDroite = true;
+						okAGauche = true;
 					}
 				}
 			} 

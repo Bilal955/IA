@@ -1,5 +1,6 @@
 package algorithms;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 import characteristics.IRadarResult;
@@ -7,16 +8,17 @@ import characteristics.Parameters;
 import characteristics.Parameters.Direction;
 import robotsimulator.Brain;
 
-public class CacherDansLesCoins extends Brain {
+public class CacherDansLesCoinsDroite extends Brain {
 
-	private double xFinalHaut = 0 + 2*Parameters.teamASecondaryBotRadius;
+
+	private double xFinalHaut = 1020 - 2*Parameters.teamASecondaryBotRadius;
 	private double yFinalHaut = 0 + 10 + Parameters.teamASecondaryBotRadius;
 	private double yFinalBas = 1940;
 	private double yMil = yFinalBas/2;
 
 	private boolean okEnHaut = false;
 	private boolean okEnBas = false;
-	private boolean okAGauche = false;
+	private boolean okDroite = false;
 
 	//---PARAMETERS---//
 	private static final double HEADINGPRECISION = 0.001;
@@ -79,7 +81,7 @@ public class CacherDansLesCoins extends Brain {
 
 
 	private void moveBasEnHaut() {
-		if(!turnVersThisPositionIsOk(-Math.PI/2, Direction.RIGHT))
+		if(!turnVersThisPositionIsOk(-Math.PI/2, Direction.LEFT))
 			return;
 		// Changement de dir une fois qu'on a atteint une limite
 		if(imRobotDuHaut) { 
@@ -126,46 +128,46 @@ public class CacherDansLesCoins extends Brain {
 		
 		boolean pasEncoreEnBas = myY < yFinalBas - 50;
 		boolean pasEncoreEnHaut = myY > yFinalHaut + 50; 
-		boolean pasEncoreAGauche = myX > xFinalHaut;
+		boolean pasEncoreADroite = myX < xFinalHaut;
 		
-		Parameters.Direction dirCur = imRobotDuHaut ? Parameters.Direction.LEFT : Parameters.Direction.RIGHT;
+		Parameters.Direction dirCur = imRobotDuHaut ? Parameters.Direction.RIGHT : Parameters.Direction.LEFT;
 		if(imRobotDuHaut) {
-			if(okAGauche && okEnHaut) {
+			if(okDroite && okEnHaut) {
 				return true;
 			} else {
 				if(pasEncoreEnHaut) {
-					if(turnVersThisPositionIsOk(-Math.PI/2, Direction.LEFT))
+					if(turnVersThisPositionIsOk(-Math.PI/2, dirCur))
 						myMove();
 				}
 				else {
 					okEnHaut = true;
-					if(pasEncoreAGauche) {
-						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
+					if(pasEncoreADroite) {
+						if(turnVersThisPositionIsOk(Math.PI, dirCur))
 							myMove();
 					}
 					else {
-						okAGauche = true;
+						okDroite = true;
 					}
 				}
 			} 
 			return false;
 		}
 		else {
-			if(okAGauche && okEnBas) {
+			if(okDroite && okEnBas) {
 				return true;
 			} else {
 				if(pasEncoreEnBas) {
-					if(turnVersThisPositionIsOk(Math.PI/2, Direction.RIGHT))
+					if(turnVersThisPositionIsOk(Math.PI/2, dirCur))
 						myMove();
 				}
 				else {
 					okEnBas = true;
-					if(pasEncoreAGauche) {
+					if(pasEncoreADroite) {
 						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
 							myMove();
 					}
 					else {
-						okAGauche = true;
+						okDroite = true;
 					}
 				}
 			} 
