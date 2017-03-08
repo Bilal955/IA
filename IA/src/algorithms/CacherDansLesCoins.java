@@ -27,8 +27,8 @@ public class CacherDansLesCoins extends Brain {
 
 	//---VARIABLES---//
 	private double myX,myY;
-	private boolean isMoving;
 	private int whoAmI;
+	private boolean imRobotDuHaut;
 
 	private ArrayList<IRadarResult> radarResults;
 
@@ -42,6 +42,7 @@ public class CacherDansLesCoins extends Brain {
 		for(IRadarResult r : detectRadar())
 			if( (r.getObjectType() == IRadarResult.Types.TeamSecondaryBot) ) 
 				whoAmI = r.getObjectDirection() < 0 ? enBas : enHaut;
+		imRobotDuHaut = (whoAmI == enHaut);
 		if (whoAmI == enHaut){
 			haveToMoveDroit = false;
 			myX=Parameters.teamASecondaryBot1InitX;
@@ -51,23 +52,14 @@ public class CacherDansLesCoins extends Brain {
 			myX=Parameters.teamASecondaryBot2InitX;
 			myY=Parameters.teamASecondaryBot2InitY;
 		}
-
-		//INIT
-		isMoving=false;
 	}
 
-
-
 	private void myMove(){
-		isMoving=true;
 		myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
 		myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
 		move();
 	}
-
-
 	private void myMoveBack() {
-		isMoving=true;
 		myX -= Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
 		myY -= Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
 		moveBack();
@@ -78,100 +70,77 @@ public class CacherDansLesCoins extends Brain {
 		// RADAR
 		radarResults = detectRadar();
 
-		// ODOMETRY CODE
-		//		if (isMoving) {
-		//			myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
-		//			myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
-		//			isMoving=false;
-		//			return;
-		//		}
-
 		// Se cache dans les coins
-		if(!goToPosition())
+		if(!iAmInMyPosition())
 			return;
-
-		// Est cache
+		// Une fois qu'il est proche du mur cache, mvt de haut en bas
 		moveBasEnHaut();
 	}
 
 
 	private void moveBasEnHaut() {
-		if( turnWhileVers(-Math.PI/2, Direction.RIGHT))
+		if(!turnVersThisPositionIsOk(-Math.PI/2, Direction.RIGHT))
 			return;
-
-
-		System.out.println("HERE");
-		if(imHaut()) {
-			System.out.println("Y = "+myY+", X = "+myX);
+		// Changement de dir une fois qu'on a atteint une limite
+		if(imRobotDuHaut) { 
 			if( myY > yMil - (Parameters.teamASecondaryBotRadius+10) || myY < 50 )
 				haveToMoveDroit = !haveToMoveDroit;
-
 		} else {
 			if(myY < yMil + (Parameters.teamASecondaryBotRadius+10) || myY >  yFinalBas-50)
 				haveToMoveDroit = !haveToMoveDroit;
 		}
-
-		if(haveToMoveDroit) {
-			System.out.println("Je move");
+		// Mouvement
+		if(haveToMoveDroit) 
 			myMove();
-		}
-		else {
-			System.out.println("Je moveBack");
+		else 
 			myMoveBack();
-		}
-
 	}
-
-	public boolean isEqual(double d1, double d2) {
-		return Math.abs(d1 - d2) < 0.001;
-	}
-
-
 
 	// Return true je dois rien faire false je suis OK
-	private boolean turnWhileVers(double dir, Direction sens) { // Par la droite ou par la gauche
+	private boolean turnVersThisPositionIsOk(double dir, Direction sens) { // Par la droite ou par la gauche
 		if(!isHeading(dir)) { // Plus est eleve, plus il tourne
 			stepTurn(sens);
-			return true;
-		} else {
 			return false;
+		} else {
+			return true;
 		}
 	}
 
-
-
+	public boolean doubleAreEquals(double d1, double d2) {
+		return Math.abs(d1 - d2) < 0.001;
+	}
 
 	// Je vais dans le direction dir
 	private boolean isHeading(double dir){
 		return Math.abs(Math.sin(getHeading()-dir))<HEADINGPRECISION;
 	}
 
-
 	private boolean isSameDirection(double dir1, double dir2){
 		return Math.abs(dir1-dir2)<ANGLEPRECISION;
 	}
 
 
-
-
-
-
-	public boolean  goToPosition() {
-		if(imHaut()) {
-			if(iAmInPositionRobotHaut()) {
+	
+	// GO dans le coin en haut a gauche ou en bas a gauche
+	public boolean  iAmInMyPosition() {
+		
+		boolean pasEncoreEnBas = myY < yFinalBas - 50;
+		boolean pasEncoreEnHaut = myY > yFinalHaut + 50; 
+		boolean pasEncoreAGauche = myX > xFinalHaut;
+		
+		Parameters.Direction dirCur = imRobotDuHaut ? Parameters.Direction.LEFT : Parameters.Direction.RIGHT;
+		if(imRobotDuHaut) {
+			if(okAGauche && okEnHaut) {
 				return true;
 			} else {
-				if(pasEncoreEnHaut()) {
-					if(turnWhile90DegreAGauche())
-						;
-					else {
+				if(pasEncoreEnHaut) {
+					if(turnVersThisPositionIsOk(-Math.PI/2, Direction.LEFT))
 						myMove();
-					}
 				}
 				else {
 					okEnHaut = true;
-					if(pasEncoreAGauche()) {
-						if(!turnWhileNotAGauche())
+					if(pasEncoreAGauche) {
+						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
 							myMove();
 					}
 					else {
@@ -182,17 +151,17 @@ public class CacherDansLesCoins extends Brain {
 			return false;
 		}
 		else {
-			if(iAmInPositionRobotBas()) {
+			if(okAGauche && okEnBas) {
 				return true;
 			} else {
-				if(pasEncoreEnBas()) {
-					if(!turnWhile90DegreADroite())
+				if(pasEncoreEnBas) {
+					if(turnVersThisPositionIsOk(Math.PI/2, Direction.RIGHT))
 						myMove();
 				}
 				else {
 					okEnBas = true;
-					if(pasEncoreAGauche()) {
-						if(!turnWhileNotAGauche())
+					if(pasEncoreAGauche) {
+						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
 							myMove();
 					}
 					else {
@@ -204,74 +173,5 @@ public class CacherDansLesCoins extends Brain {
 		}
 	}
 
-
-	private boolean pasEncoreEnBas() {
-		return myY < yFinalBas - 50; ///////// TODO
-	}
-	private boolean pasEncoreEnHaut() {
-		return myY > yFinalHaut + 50; //////// TODO
-	}
-
-	private boolean pasEncoreAGauche() {
-		return myX > xFinalHaut;
-	} 
-
-	private boolean iAmInPositionRobotHaut() {
-		return okAGauche && okEnHaut;
-	}
-
-	private boolean iAmInPositionRobotBas() {
-		return okAGauche && okEnBas;
-	}
-
-
-
-
-
-
-	private boolean turnWhileNotVersLeHaut(Direction dir) {
-		if(!isHeading(-Math.PI/2)) { // Plus le base est eleve, plus il tourne
-			stepTurn(dir);
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
-	private boolean turnWhile90DegreAGauche() {
-		if(super.getHeading() > -Math.PI/2) { // Plus le base est eleve, plus il tourne
-			stepTurn(Parameters.Direction.LEFT);
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
-	private boolean turnWhile90DegreADroite() {
-		if(super.getHeading() < Math.PI/2) { // Plus le base est eleve, plus il tourne
-			stepTurn(Parameters.Direction.RIGHT);
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
-	private boolean turnWhileNotAGauche() {
-		if(!isHeading(-Math.PI)) { // Plus le base est eleve, plus il tourne
-			Parameters.Direction dir = imHaut() ? Parameters.Direction.LEFT : Parameters.Direction.RIGHT;
-			stepTurn(dir);
-			return true;
-		}
-		return false;
-	}
-
-
-
-	private boolean imHaut() {
-		return whoAmI == enHaut;
-	}
 
 }

@@ -11,122 +11,105 @@ import robotsimulator.Brain;
 public class CacherDansLesCoins2 extends Brain {
 
 
-	private double xFinalHaut = 0+2*Parameters.teamASecondaryBotRadius;
-	private double yFinalHaut = 0+2*Parameters.teamASecondaryBotRadius;
+	private double xFinalHaut = 2000 - 2*Parameters.teamASecondaryBotRadius;
+	private double yFinalHaut = 0 + 10 + Parameters.teamASecondaryBotRadius;
+	private double yFinalBas = 1940;
+	private double yMil = yFinalBas/2;
 
 	private boolean okEnHaut = false;
-	private boolean okAGauche = false;
+	private boolean okEnBas = false;
+	private boolean okDroite = false;
 
 	//---PARAMETERS---//
 	private static final double HEADINGPRECISION = 0.001;
 	private static final double ANGLEPRECISION = 0.1;
-	private static final int UNDEFINED = 0xBADC0DE;
 
 	private static final int enHaut = 0x343589;
 	private static final int enBas = 0x10989;
 
 	//---VARIABLES---//
-	private boolean turnNorthTask,turnLeftTask;
-	private double endTaskDirection;
 	private double myX,myY;
-	private boolean isMoving;
 	private int whoAmI;
+	private boolean imRobotDuHaut;
 
 	private ArrayList<IRadarResult> radarResults;
 
+
+	private boolean haveToMoveDroit; // TRUE --> moveBack
+
 	@Override
 	public void activate() {
-		for(IRadarResult r : detectRadar()) {
-			if( (r.getObjectType() == IRadarResult.Types.TeamSecondaryBot) ) {
-				if(r.getObjectDirection() < 0)
-					whoAmI = enBas;
-				else
-					whoAmI = enHaut;
-			}
-		}
-		for (IRadarResult o: detectRadar())
-			if (isSameDirection(o.getObjectDirection(),Parameters.NORTH)) 
-				whoAmI = UNDEFINED;
+
+		/* Detection de qui est le robot courant */
+		for(IRadarResult r : detectRadar())
+			if( (r.getObjectType() == IRadarResult.Types.TeamSecondaryBot) ) 
+				whoAmI = r.getObjectDirection() < 0 ? enBas : enHaut;
+		imRobotDuHaut = (whoAmI == enHaut);
 		if (whoAmI == enHaut){
+			haveToMoveDroit = false;
 			myX=Parameters.teamASecondaryBot1InitX;
 			myY=Parameters.teamASecondaryBot1InitY;
 		} else {
+			haveToMoveDroit = true;
 			myX=Parameters.teamASecondaryBot2InitX;
 			myY=Parameters.teamASecondaryBot2InitY;
 		}
-
-
-		//INIT
-		turnNorthTask=true;
-		turnLeftTask=false;
-		isMoving=false;
 	}
 
-	public double getDirectionToAngle(double dir, double x2, double y2) {
-		double angle = Math.atan2(y2, x2) - Math.atan(dir);
-		if (angle < 0) 
-			angle += 2 * Math.PI;
-		return angle;
+	private void myMove(){
+		myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
+		myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
+		move();
 	}
-	
+	private void myMoveBack() {
+		myX -= Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
+		myY -= Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
+		moveBack();
+	}
+
 	@Override
 	public void step() {
 		// RADAR
 		radarResults = detectRadar();
 
-		// ODOMETRY CODE
-		if (isMoving) {
-			myX += Parameters.teamASecondaryBotSpeed*Math.cos(getHeading());
-			myY += Parameters.teamASecondaryBotSpeed*Math.sin(getHeading());
-			isMoving=false;
+		// Se cache dans les coins
+		if(!iAmInMyPosition())
 			return;
-		}
-
-		//DEBUG MESSAGE
-		if(imHaut()) {
-			MyPoint objectif = new MyPoint(1, 1);
-			MyPoint ptMe = new MyPoint(myX, myY);
-			double dir = -getAngle(ptMe, objectif);
-			System.out.println(getHeading());
-			
-			if(isHeading2(dir)) {
-				System.out.println("JE SUIS HEADING");
-				myMove();
-				return;
-			}
-			else if(dir > 0) {
-				stepTurn(Direction.RIGHT);
-				return;
-			}
-			else {
-				stepTurn(Direction.LEFT);
-				return;
-			}
-		}
-		else {
-
-		}
-
-	}
-	
-	
-	 public double getAngle(MyPoint me, MyPoint dest) {
-		 Vector2d vMe = new Vector2d(me);
-		 Vector2d vDest= new Vector2d(dest);
-		 double angle = vMe.angle(vDest);
-		 System.out.println(me + " | " + dest + " | " +angle + " | "+getHeading());
-		 return angle;
-     }
-
-
-
-	private boolean imHaut() {
-		return whoAmI == enHaut;
+		// Une fois qu'il est proche du mur cache, mvt de haut en bas
+		moveBasEnHaut();
 	}
 
-	private void myMove(){
-		isMoving=true;
-		move();
+
+	private void moveBasEnHaut() {
+		if(!turnVersThisPositionIsOk(-Math.PI/2, Direction.RIGHT))
+			return;
+		// Changement de dir une fois qu'on a atteint une limite
+		if(imRobotDuHaut) { 
+			if( myY > yMil - (Parameters.teamASecondaryBotRadius+10) || myY < 50 )
+				haveToMoveDroit = !haveToMoveDroit;
+		} else {
+			if(myY < yMil + (Parameters.teamASecondaryBotRadius+10) || myY >  yFinalBas-50)
+				haveToMoveDroit = !haveToMoveDroit;
+		}
+		// Mouvement
+		if(haveToMoveDroit) 
+			myMove();
+		else 
+			myMoveBack();
+	}
+
+	// Return true je dois rien faire false je suis OK
+	private boolean turnVersThisPositionIsOk(double dir, Direction sens) { // Par la droite ou par la gauche
+		if(!isHeading(dir)) { // Plus est eleve, plus il tourne
+			stepTurn(sens);
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public boolean doubleAreEquals(double d1, double d2) {
+		return Math.abs(d1 - d2) < 0.001;
 	}
 
 	// Je vais dans le direction dir
@@ -134,13 +117,63 @@ public class CacherDansLesCoins2 extends Brain {
 		return Math.abs(Math.sin(getHeading()-dir))<HEADINGPRECISION;
 	}
 
-	private boolean isHeading2(double dir){
-		return Math.abs(Math.sin(getHeading()-dir))<Parameters.teamAMainBotStepTurnAngle;
-	}
-
 	private boolean isSameDirection(double dir1, double dir2){
 		return Math.abs(dir1-dir2)<ANGLEPRECISION;
 	}
+
+
 	
+	// GO dans le coin en haut a gauche ou en bas a gauche
+	public boolean  iAmInMyPosition() {
+		
+		boolean pasEncoreEnBas = myY < yFinalBas - 50;
+		boolean pasEncoreEnHaut = myY > yFinalHaut + 50; 
+		boolean pasEncoreADroite = myX < xFinalHaut;
+		
+		Parameters.Direction dirCur = imRobotDuHaut ? Parameters.Direction.LEFT : Parameters.Direction.RIGHT;
+		if(imRobotDuHaut) {
+			if(okDroite && okEnHaut) {
+				return true;
+			} else {
+				if(pasEncoreEnHaut) {
+					if(turnVersThisPositionIsOk(-Math.PI/2, Direction.LEFT))
+						myMove();
+				}
+				else {
+					okEnHaut = true;
+					if(pasEncoreADroite) {
+						if(turnVersThisPositionIsOk(Math.PI, dirCur))
+							myMove();
+					}
+					else {
+						okDroite = true;
+					}
+				}
+			} 
+			return false;
+		}
+		else {
+			if(okDroite && okEnBas) {
+				return true;
+			} else {
+				if(pasEncoreEnBas) {
+					if(turnVersThisPositionIsOk(Math.PI/2, Direction.RIGHT))
+						myMove();
+				}
+				else {
+					okEnBas = true;
+					if(pasEncoreADroite) {
+						if(turnVersThisPositionIsOk(-Math.PI, dirCur))
+							myMove();
+					}
+					else {
+						okDroite = true;
+					}
+				}
+			} 
+			return false;
+		}
+	}
+
 
 }
