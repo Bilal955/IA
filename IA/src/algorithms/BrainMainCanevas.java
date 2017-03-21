@@ -75,19 +75,42 @@ public class BrainMainCanevas extends Brain {
 
 		if (getHealth()<=0) { return; }
 
+		
 		/* Si je vois un ennemi (le plus proche) je le shoot */
 		IRadarResult nearestObj = null;
-		double minDist = Double.MAX_VALUE;
+		IRadarResult mechantQuiTire = null;
+		IRadarResult mechantQuiTirePas = null;
+		
+		//double minDist = Double.MAX_VALUE;
+		double minDistTire = Double.MAX_VALUE;
+		double minDistTirePas = Double.MAX_VALUE;
+		
 		for (IRadarResult iRadarResult : res) {
 			double dist = iRadarResult.getObjectDistance();
 			IRadarResult.Types type = iRadarResult.getObjectType();
 			if (type != IRadarResult.Types.OpponentMainBot && type != IRadarResult.Types.OpponentSecondaryBot)
 				continue;
-			if (dist < minDist) {
-				minDist = dist;
-				nearestObj = iRadarResult;
+			
+			if (type != IRadarResult.Types.OpponentMainBot) {
+				if (dist < minDistTire) {
+					minDistTire = dist;
+					mechantQuiTire = iRadarResult;
+					//nearestObj = iRadarResult;
+				}
+			}
+			else if (type != IRadarResult.Types.TeamSecondaryBot) {
+				if (dist < minDistTirePas) {
+					minDistTirePas = dist;
+					mechantQuiTirePas = iRadarResult;
+					//nearestObj = iRadarResult;
+				}
 			}
 		}
+		nearestObj = mechantQuiTirePas;
+		if(mechantQuiTire != null)
+			nearestObj = mechantQuiTire;
+		
+		
 		if (nearestObj != null) {
 			if (nearestObj.getObjectType() == IRadarResult.Types.OpponentMainBot
 					|| nearestObj.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
