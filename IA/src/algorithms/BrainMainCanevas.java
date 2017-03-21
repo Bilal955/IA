@@ -128,10 +128,9 @@ public class BrainMainCanevas extends Brain {
 		////////////////////////////////////////////////////::
 		if (turning) {
 			stepTurn(Direction.LEFT);
-			if (getHeading() != 0.0 && isEndTurn(Math.PI)) {
-				// System.out.println("Stop turning");
+			if (getHeading() != 0.0 && isEndTurn(Math.PI/2)) {
 				turning = false;
-				if (rand.nextInt(5) == 1) {
+				if (rand.nextInt(2) == 1) {
 					avoid = true;
 					firstAvoid = true;
 				}
