@@ -140,11 +140,12 @@ public class BrainMainCanevas extends Brain {
 		}
 
 		if (avoid) {
+			System.out.println("J'avoid");
 			if(firstAvoid) {  // TODO
 				firstAvoid = false;
 			}
 			else {
-				if(isHeading(getHeading()))
+				if(isHeading(lastDir))
 					turnDir = !turnDir;
 			}
 				
@@ -202,17 +203,17 @@ public class BrainMainCanevas extends Brain {
 
 		// S'il y a un mur je recule
 		if (frontType == IFrontSensorResult.Types.WALL) {
-			//turning = true;
-			avoid = true;
+			turning = true;
+			//avoid = true;
 		} else if ((frontType == IFrontSensorResult.Types.TeamMainBot
 				|| frontType == IFrontSensorResult.Types.TeamSecondaryBot || frontType == IFrontSensorResult.Types.Wreck)
 				) {
 			// System.out.println("> " + id + " front: " + frontType);
-			//avoid = true;
+			avoid = true;
 			shoot = 1; // pas tirer sur ses partenaires
 		}
 
-		// Soit je tire soit je bouge
+		// Je bouge
 
 		if (front)
 			move();
