@@ -5,8 +5,9 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="characteristics.Parameters"/>
-<fullyQualifiedTypeName name="characteristics.IRadarResult"/>
-<fullyQualifiedTypeName name="characteristics.IRadarResult.Types"/>
 <fullyQualifiedTypeName name="characteristics.IFrontSensorResult"/>
 <fullyQualifiedTypeName name="characteristics.IFrontSensorResult.Types"/>
+<fullyQualifiedTypeName name="characteristics.IRadarResult"/>
+<fullyQualifiedTypeName name="characteristics.IRadarResult.Types"/>
+<fullyQualifiedTypeName name="robotsimulator.Brain"/>
 </qualifiedTypeNameHistroy>

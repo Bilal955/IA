@@ -1,0 +1,226 @@
+/* ******************************************************
+ * Simovies - Eurobot 2015 Robomovies Simulator.
+ * Copyright (C) 2014 <Binh-Minh.Bui-Xuan@ens-lyon.org>.
+ * GPL version>=3 <http://www.gnu.org/licenses/>.
+ * $Id: algorithms/BrainCanevas.java 2014-10-19 buixuan.
+ * ******************************************************/
+package algorithms;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import robotsimulator.Brain;
+import characteristics.IFrontSensorResult;
+import characteristics.IRadarResult;
+import characteristics.IRadarResult.Types;
+import characteristics.Parameters.Direction;
+
+public class BrainMainCanevas extends Brain {
+	// ---VARIABLES---//
+	private static final double HEADINGPRECISION = 0.001;
+	private Random rand;
+	private int shoot;
+	private int shootEnemy;
+	private boolean front;
+	private boolean turning;
+	private boolean avoid;
+	private int nbBack;
+	private int id;
+	private static int gene = 1;
+
+	private int cptDetectWreck = 0;
+
+	private int nbTour;
+	private boolean jePrendPlusEnCompte = false;
+
+	// ---CONSTRUCTORS---//
+	public BrainMainCanevas() {
+		super();
+	}
+
+
+	// ---ABSTRACT-METHODS-IMPLEMENTATION---//
+	public void activate() {
+		move();
+		front = true;
+		shoot = 0;
+		shootEnemy = 0;
+		nbBack = 0;
+		rand = new Random();
+		rand.setSeed(10);
+		turning = false;
+		avoid = false;
+		id = gene++;
+		nbTour = 0;
+	}
+
+	public void step() {
+		nbTour++;
+
+		boolean nobody = true;
+		IFrontSensorResult.Types frontType = detectFront().getObjectType();
+		ArrayList<IRadarResult> res = detectRadar();
+
+		if (isHeading(getHealth()))
+			return;
+
+		// Si je vois un ennemi (le plus proche) je lui tire dessus tout en reculant
+
+		/*IRadarResult nearestObj = null;
+		double minDist = Double.MAX_VALUE;
+		for (IRadarResult iRadarResult : res) {
+			double dist = iRadarResult.getObjectDistance();
+			if (dist < minDist) {
+				minDist = dist;
+				nearestObj = iRadarResult;
+			}
+		}*/
+		//if (nearestObj != null) {
+		for (IRadarResult iRadarResult : res) {
+			if(iRadarResult.getObjectType() == IRadarResult.Types.OpponentMainBot || iRadarResult.getObjectType() == IRadarResult.Types.OpponentSecondaryBot)
+		}
+			if (nearestObj.getObjectType() == IRadarResult.Types.OpponentMainBot
+					|| nearestObj.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
+				fire(nearestObj.getObjectDirection());
+				shootEnemy++;
+				return;
+			}
+		//}
+		///////////////////////////// FIN ENEMY
+
+
+
+		if(wreckNear()) {
+			avoid = true;
+			//			if(!jePrendPlusEnCompte) {
+			//				jePrendPlusEnCompte = true;
+			//				avoid = true;
+			//			}
+			//			else {
+			//				avoid = false;
+			//				if(cptDetectWreck > 1000) {
+			//					cptDetectWreck = 0;
+			//					jePrendPlusEnCompte = false;
+			//				}
+			//			}
+
+			//cptDetectWreck++;
+		}
+
+		if (turning) {
+			stepTurn(Direction.LEFT);
+			if (getHeading() != 0.0 && isEndTurn(Math.PI)) {
+				// System.out.println("Stop turning");
+				turning = false;
+				if (rand.nextInt(5) == 1)
+					avoid = true;
+			}
+			return;
+		}
+
+		if (avoid) {
+			Direction toTurn = rand.nextBoolean() ? Direction.LEFT : Direction.RIGHT;
+			toTurn = Direction.LEFT;
+			stepTurn(toTurn);
+			if (getHeading() != 0.0 && isEndTurn(Math.PI / 2)) {
+				avoid = false;
+			}
+			return;
+		}
+
+		//System.out.println("LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+
+		if (frontType == IFrontSensorResult.Types.Wreck) {
+			moveBack();
+			avoid = true;
+			return;		
+		}
+
+		int nbEnemy = 0;
+		for (IRadarResult iRadarResult : res) {
+			IRadarResult.Types type = iRadarResult.getObjectType();
+			if (type == IRadarResult.Types.OpponentMainBot || type == IRadarResult.Types.OpponentSecondaryBot) {
+				nbEnemy++;
+				nobody = false;
+			}
+		}
+
+
+
+
+
+		for (IRadarResult iRadarResult : res) {
+			IRadarResult.Types type = iRadarResult.getObjectType();
+
+			if (type == IRadarResult.Types.Wreck && isHeading(iRadarResult.getObjectDirection())) {
+				// System.out.println(">" + id + "j 'essaye d'eviter WRECK");
+				moveBack();
+				avoid = true;
+				return;
+			}
+
+		}
+
+		// Si je vois personne a l'horizon je bouge
+		if (nobody)
+			front = true;
+
+		// S'il y a un mur je recule
+		if (frontType == IFrontSensorResult.Types.WALL) {
+			turning = true;avoid = true;
+		} else if (frontType == IFrontSensorResult.Types.TeamMainBot
+				|| frontType == IFrontSensorResult.Types.TeamSecondaryBot || frontType == IFrontSensorResult.Types.Wreck) {
+			// System.out.println("> " + id + " front: " + frontType);
+			avoid = true;
+			shoot = 1; // pas tirer sur ses partenaires
+		}
+
+		// Soit je tire soit je bouge
+		if (shoot % 3 == 0) {
+			// fire(getShootingAngle());
+			move();
+		} else {
+			if (front)
+				move();
+			else
+				moveBack();
+		}
+		shoot++;
+	}
+
+
+
+	private boolean wreckNear() {
+		for (IRadarResult iRadarResult : detectRadar()) {
+			IRadarResult.Types type = iRadarResult.getObjectType();
+			double dist = iRadarResult.getObjectDistance();
+			if ( (type == Types.Wreck || type == Types.TeamSecondaryBot || type == Types.TeamMainBot)  && dist <= 100) {
+				System.out.println("HERE 1");
+				System.out.println("DIR = " +iRadarResult.getObjectDirection());
+				System.out.println("HERE 2");
+				return true;
+			}
+
+		}
+		return false;
+	}
+
+	private boolean isHeading(double dir) {
+		return Math.abs(Math.sin(getHeading() - dir)) < HEADINGPRECISION;
+	}
+
+	private boolean isHeading(double dir, double heading) {
+		return Math.abs(Math.sin(heading - dir)) < HEADINGPRECISION;
+	}
+
+	public boolean isEndTurn(double val) {
+		return Math.abs(Math.sin((getHeading() % val) - val)) < HEADINGPRECISION
+				|| Math.abs(Math.sin(getHeading() % val)) < HEADINGPRECISION;
+	}
+
+	private boolean sameDirection(double dirA, double dirB) {
+		boolean diffSign = (dirA < 0 && dirB > 0) || (dirA > 0 && dirB < 0);
+
+		return diffSign;
+	}
+}
