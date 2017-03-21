@@ -132,13 +132,8 @@ public class BrainMainCanevas extends Brain {
 			stepTurn(toTurn);
 			if (getHeading() != 0.0 && isEndTurn(valTmp)) {
 				turning = false;
-				//				int alea = rand.nextInt(3);
-				//				System.out.println("ALEA = "+alea);
-				//				if (alea != 1) {
-				//					avoid = true;
-				//					firstAvoid = true;
-				//				}
 				turnDir = rand.nextBoolean();
+				System.out.println("Turning : turnDir = "+turnDir);
 			}
 			return;
 		}
@@ -154,13 +149,11 @@ public class BrainMainCanevas extends Brain {
 				if(isHeading(lastDir))
 					turnDir = !turnDir;
 			}
-
 			Direction toTurn = turnDir ? Direction.RIGHT : Direction.LEFT;
-			//toTurn = Direction.LEFT;
 			stepTurn(toTurn);
 			double valTmp = toTurn == Direction.RIGHT ? -Math.PI/2 : Math.PI/2; //
 			if (getHeading() != 0.0 && isEndTurn(valTmp)) {//isEndTurn(Math.PI/2)) {
-				//System.out.println("JE AVOID");
+				System.out.println("Avoid : turnDir = "+turnDir);
 				avoid = false;
 				avance = true;
 				avoidFinish = true;
