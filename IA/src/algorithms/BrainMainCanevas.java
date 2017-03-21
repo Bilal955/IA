@@ -65,7 +65,7 @@ public class BrainMainCanevas extends Brain {
 
 	public void step() {
 		nbTour++;
-		System.out.println(nbTour);
+		//System.out.println(nbTour);
 		if(nbTour < 100)
 			return;
 
@@ -127,19 +127,26 @@ public class BrainMainCanevas extends Brain {
 
 		////////////////////////////////////////////////////::
 		if (turning) {
-			stepTurn(Direction.LEFT);
-			if (getHeading() != 0.0 && isEndTurn(Math.PI/2)) {
+			Direction toTurn = turnDir ? Direction.RIGHT : Direction.LEFT;
+			double valTmp = toTurn == Direction.RIGHT ? -Math.PI/2 : Math.PI/2;
+			stepTurn(toTurn);
+			if (getHeading() != 0.0 && isEndTurn(valTmp)) {
 				turning = false;
-				if (rand.nextInt(2) == 1) {
-					avoid = true;
-					firstAvoid = true;
-				}
+				//				int alea = rand.nextInt(3);
+				//				System.out.println("ALEA = "+alea);
+				//				if (alea != 1) {
+				//					avoid = true;
+				//					firstAvoid = true;
+				//				}
+				turnDir = rand.nextBoolean();
 			}
 			return;
 		}
 
+
+		// PAS TOUCHE
 		if (avoid) {
-			System.out.println("J'avoid");
+			//	System.out.println("J'avoid");
 			if(firstAvoid) {  // TODO
 				firstAvoid = false;
 			}
@@ -147,15 +154,17 @@ public class BrainMainCanevas extends Brain {
 				if(isHeading(lastDir))
 					turnDir = !turnDir;
 			}
-				
+
 			Direction toTurn = turnDir ? Direction.RIGHT : Direction.LEFT;
 			//toTurn = Direction.LEFT;
 			stepTurn(toTurn);
-			if (getHeading() != 0.0 && isEndTurn(Math.PI / 2)) {
-				System.out.println("JE AVOID");
+			double valTmp = toTurn == Direction.RIGHT ? -Math.PI/2 : Math.PI/2; //
+			if (getHeading() != 0.0 && isEndTurn(valTmp)) {//isEndTurn(Math.PI/2)) {
+				//System.out.println("JE AVOID");
 				avoid = false;
 				avance = true;
 				avoidFinish = true;
+				turnDir = rand.nextBoolean();
 			}
 			lastDir = getHeading(); // TODO
 			return;
@@ -223,6 +232,14 @@ public class BrainMainCanevas extends Brain {
 	}
 
 
+	//	public double getDistToObj(double dir) {
+	//		for (IRadarResult iRadarResult : detectRadar()) {
+	//			IRadarResult.Types type = iRadarResult.getObjectType();
+	//			double dir2 = iRadarResult.getObjectDirection();
+	//			if(Math.abs(dir - dir2) < 0.01)
+	//				
+	//		}
+	//	}
 
 	private boolean wreckNear() {
 		for (IRadarResult iRadarResult : detectRadar()) {
