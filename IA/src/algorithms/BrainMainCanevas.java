@@ -18,7 +18,7 @@ import characteristics.Parameters.Direction;
 public class BrainMainCanevas extends Brain {
 
 	private boolean turnDir = false;
-
+	private int countToTurn = 0;
 	// ---VARIABLES---//
 	private static final double HEADINGPRECISION = 0.001;
 	private Random rand;
@@ -65,9 +65,24 @@ public class BrainMainCanevas extends Brain {
 
 	public void step() {
 		nbTour++;
+		countToTurn++;
 		//System.out.println(nbTour);
 		if(nbTour < 100)
 			return;
+
+
+		//////////////////////////////////////// TODO
+		if(nbTour > 5000) {
+			int a = rand.nextInt(30);
+		//	System.out.println("A = "+a);
+			if(a == 15 && !avoid && (countToTurn > 1500)) {
+				System.out.println("HASARD : "+a+" nbTour = "+nbTour);
+				countToTurn = 0;
+				avoid = true;
+			}
+		}
+		/////////////////////////
+
 
 		boolean nobody = true;
 		IFrontSensorResult.Types frontType = detectFront().getObjectType();
@@ -75,22 +90,22 @@ public class BrainMainCanevas extends Brain {
 
 		if (getHealth()<=0) { return; }
 
-		
+
 		/* Si je vois un ennemi (le plus proche) je le shoot */
 		IRadarResult nearestObj = null;
 		IRadarResult mechantQuiTire = null;
 		IRadarResult mechantQuiTirePas = null;
-		
+
 		//double minDist = Double.MAX_VALUE;
 		double minDistTire = Double.MAX_VALUE;
 		double minDistTirePas = Double.MAX_VALUE;
-		
+
 		for (IRadarResult iRadarResult : res) {
 			double dist = iRadarResult.getObjectDistance();
 			IRadarResult.Types type = iRadarResult.getObjectType();
 			if (type != IRadarResult.Types.OpponentMainBot && type != IRadarResult.Types.OpponentSecondaryBot)
 				continue;
-			
+
 			if (type != IRadarResult.Types.OpponentMainBot) {
 				if (dist < minDistTire) {
 					minDistTire = dist;
@@ -109,8 +124,8 @@ public class BrainMainCanevas extends Brain {
 		nearestObj = mechantQuiTirePas;
 		if(mechantQuiTire != null)
 			nearestObj = mechantQuiTire;
-		
-		
+
+
 		if (nearestObj != null) {
 			if (nearestObj.getObjectType() == IRadarResult.Types.OpponentMainBot
 					|| nearestObj.getObjectType() == IRadarResult.Types.OpponentSecondaryBot) {
